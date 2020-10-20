@@ -6,7 +6,9 @@
 	<!-- No es valido este formato de comentario -->
 	*/
 
-	table, th, td{
+	table,
+	th,
+	td {
 		/* voy a darle estilos a la table, th y td*/
 		border: 1px solid black;
 		/*borde solido de color negro de grosor 1px */
@@ -15,75 +17,40 @@
 	/*lo que escriba aca no afecta a table */
 
 	/*para darle estilo a las clases se 'llaman' con .nombre-de-clase*/
-	.finde{
-		background-color: gray; /*color de fondo gris*/
-		color: #c4f5ff; /*color de tipografia rojo*/
+	.finde {
+		background-color: gray;
+		/*color de fondo gris*/
+		color: #c4f5ff;
+		/*color de tipografia rojo*/
 	}
 
-	.navegacion{
+	.navegacion {
 		/*Pegar los bordes para que no queden espacios */
 		border-collapse: collapse;
+		margin: 0 auto;
 	}
 
-	.navegacion th{ /*Le cambio el color al th dentro de la tabla con clase navegacion */
+	.navegacion th {
+		/*Le cambio el color al th dentro de la tabla con clase navegacion */
 		background-color: #4678db;
 	}
 
-	.navegacion td{
+	.navegacion td {
 		background-color: #cce1ff;
 	}
-
-
 </style>
 <!--Volvimos a HTML -->
 <!-- Fin de Estilos -->
 
-	<head>
-		<title>Home</title>
-	</head>
+<head>
+	<title>Home</title>
+</head>
 
-	<body style="background-color: pink;">
-		<!-- Nombre -->
-		<h1>Kiosko A-Diario</h1>
+<body style="background-color: pink;text-align: center;">
+	<!-- Nombre -->
+	<div style="background-color: yellowgreen;width: 60%;margin: 0 auto;">
+		<h1 style="font-size: 4em;">Kiosko A-Diario</h1>
 		<h2>Un sitio donde se pueden leer diarios</h2>
-
-<!--
-		<!-- Navegacion -->
-		<p>Tabla de ejemplo</p>
-		<table><!-- la tabla -->
-			<thead><!-- Cabecera de la tabla-->
-				<tr><!-- fila de la tabla -->
-					<th class="finde"><!-- celda de la tabla TH (de la cabecera)-->
-					Domingo	18/10
-					</th> <!-- Celda 1-->
-					<th class="finde">Sabado 17/10</th>
-					<th>Viernes 16/10</th>
-					<th>Jueves 15/10</th>
-					<th>Miercoles 14/10</th>
-					<th>Martes 13/10</th>
-					<th style="background-color: red; color: white;">Lunes 12/10</th> <!-- Inline-Style -->
-				</tr>
-			</thead>
-			<tbody><!-- Cuerpo de la tabla -->
-				<tr>
-					<td>Domingo</td> <!-- Celda 1-->
-					<td>Sabado</td>
-					<td>Viernes</td> <!-- Celda 3 -->
-					<td>Jueves</td>
-					<td>Miercoles</td>
-					<td>Martes</td>
-					<td>Lunes</td>
-				</tr>
-				<tr>
-					<td>Esta celda esta abajo de Domingo</td>
-					<td>Abajo de Sabado</td>
-				</tr>
-			</tbody>
-		</table>
-	-->
-		<br><!-- Salto de linea-->
-
-		<p>Tabla de navegacion posta</p>
 
 		<table class="navegacion">
 			<thead>
@@ -98,16 +65,27 @@
 			<tbody>
 				<tr>
 					<!--Tengo 7 celdas en el cuerpo-->
-					<td><a href="domingo.html">Domingo</a></td>
-					<td><a href="lunes.html">Lunes</a></td>
-					<td>Martes</td>
-					<td>Miercoles</td>
-					<td>Jueves</td>
-					<td>Viernes</td>
-					<td>Sabado</td>
+					<td><a href="domingo.html">Domingo 18/10</a></td>
+					<td><a href="lunes.html">Lunes 19/10</a></td>
+					<td>Martes 20/10</td>
+					<td>Miercoles 21/10</td>
+					<td>Jueves 22/10</td>
+					<td>Viernes 23/10</td>
+					<td>Sabado 24/10</td>
 				</tr>
 			</tbody>
 		</table>
 
-	</body>
+		<div>
+			<br>
+			<br>
+			<br>
+		</div>
+	</div>
+
+
+</body>
+
+<footer style="background-color: grey;width: 60%;margin: 0 auto;">Derechos Reservados. 2020.</footer>
+
 </html>
