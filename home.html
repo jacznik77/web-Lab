@@ -1,100 +1,27 @@
 <html>
-<!-- Estilos de la pagina -->
-<style>
-	/* Comentarios en CSS */
-	/*
-	<!-- No es valido este formato de comentario -->
-	*/
-
-	table,
-	th,
-	td {
-		/* voy a darle estilos a la table, th y td*/
-		border: 1px solid black;
-		/*borde solido de color negro de grosor 1px */
-	}
-
-	/*lo que escriba aca no afecta a table */
-
-	/*para darle estilo a las clases se 'llaman' con .nombre-de-clase*/
-	.finde {
-		background-color: gray;
-		/*color de fondo gris*/
-		color: #c4f5ff;
-		/*color de tipografia rojo*/
-	}
-
-	.navegacion {
-		/*Pegar los bordes para que no queden espacios */
-		border-collapse: collapse;
-		margin: 0 auto;
-	}
-
-	.navegacion th {
-		/*Le cambio el color al th dentro de la tabla con clase navegacion */
-		background-color: #4678db;
-	}
-
-	.navegacion td {
-		background-color: #cce1ff;
-	}
-
-	body{
-		background-image: url("fondo2.jpg"); /*Imagen de fondo, NOTA: Fondo tentativo*/
-		background-repeat: no-repeat; /*Si se usa 'repeat' se repite en caso de que sea muy chica*/
-		/* height: 500px; altura de body*/
-  		background-position: center; /*posicion del fondo: centrado */
-  		background-size: cover;  /*si es cover, el tamanio de la imagen se ajusta para cubrir toda la ventana visible */
-  		position: relative;
-	}
-
-	.cajita{
-		background: rgba(255, 255, 255, 0.3); /*COLOR DE FONDO CON ALPHA (TRANSPARENCIA)*/
-	}
-
-	.cajita h2{
-		/*aca van los estilos del titulo principal*/
-		font-size: 45px; /*Tamanio de fuente*/
-		text-decoration: underline overline; /*subrayado y sobrerayado*/
-		text-align: left; /*Alinear el texto a la izquierda*/
-		opacity: 1;
-
-	}
-
-	.cajita h1{
-		font-size: 90px;
-		text-align: left; /*Alinear el texto a la izquierda*/
-	}
-
-	.fondo-mate{
-		margin: 0 auto; /*Centrado del div fondo-mate*/
-		width: 60%;
-		height: 100%;
-		background-image: url("fondo.jpg");
-		background-size: cover; /*Se adapta al div con 60% de ancho y 100% de alto */
-		background-repeat: no-repeat;
-	}
-
-</style>
-<!--Volvimos a HTML -->
-<!-- Fin de Estilos -->
 
 <head>
-	<title>Home</title>
+	<title>Inicio - Kiosko A Diario</title>
+	<link rel="stylesheet" href="estilos.css"> <!-- Enlace a estilos-->
 </head>
 
-<body style="background-color: pink;text-align: center;">
-	<div class="fondo-mate"> <!-- INICIO DEL DIV FONDO MATE -->
-	<!-- Nombre -->
+<body style="">
+	<div class="fondo-mate">
+		<!-- INICIO DEL DIV FONDO MATE -->
+		<!-- Nombre -->
 
-	<!-- inicio cajita --><div class="cajita" style="width: 100%; margin: 0 auto;">
-		<!--
+		<!-- inicio cajita -->
+		<div class="cajita" style="width: 100%; margin: 0 auto;">
+			<!--
 		<h1 style="font-size: 4em;">Kiosko A-Diario</h1>
 		<h2>Un sitio donde se pueden leer diarios</h2> -->
-		<h2 style="padding-top: 20px; margin-bottom: 0px; margin-left: 10px;">Kiosko</h2>
-		<h1 style="margin-top: 0px; margin-left: 20px; margin-bottom: 0px">A-Diario</h1>
-		<p style="border-top: 10px dashed #800f05; width: 100%; font-size:30px; padding-top: 15px; padding-bottom: 15px;">Un sitio donde se pueden leer diarios</p><!-- revisar -->
-	</div><!--Fin cajita -->
+			<h2>Kiosko</h2>
+			<h1>A-Diario</h1>
+			<p
+				style="border-top: 10px dashed #800f05; width: 100%; font-size:30px; padding-top: 15px; padding-bottom: 15px;text-align: center;">
+				Un sitio donde se pueden leer diarios</p><!-- revisar -->
+		</div>
+		<!--Fin cajita -->
 
 		<table class="navegacion">
 			<thead>
@@ -102,33 +29,34 @@
 				<!-- Colspan es para que se alargue una celda
 					una determinada cantidad de celdas -->
 				<tr>
-					<!-- Alargate 7 celdas -->
-					<th colspan="7">NAVEGACION</th>
+					<!-- Alargate 8 celdas -->
+					<th colspan="8">NAVEGACION</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
-					<!--Tengo 7 celdas en el cuerpo-->
-					<td><a href="domingo.html">Domingo 18/10</a></td>
-					<td><a href="lunes.html">Lunes 19/10</a></td>
-					<td>Martes 20/10</td>
-					<td>Miercoles 21/10</td>
-					<td>Jueves 22/10</td>
-					<td>Viernes 23/10</td>
-					<td>Sabado 24/10</td>
+					<!--Tengo 8 celdas en el cuerpo-->
+					<td><a href="home.html">INICIO</a></td>
+					<td><a href="domingo.html"> Domingo 18/10 </a></td>
+					<td><a href="lunes.html"> Lunes 19/10 </a></td>
+					<td> Martes 20/10 </td>
+					<td> Miercoles 21/10 </td>
+					<td> Jueves 22/10 </td>
+					<td> Viernes 23/10 </td>
+					<td> Sabado 24/10 </td>
 				</tr>
 			</tbody>
 		</table>
 
-		<div>
-			<br>
-			<br>
-			<br>
-		</div>
+
+		<article class="articulo" style="margin-top: 20px;">
+			<h2>Inicio</h2>
+			<p>Amigo esta es tremenda paginita para mantenerte informado</p>
+		</article>
 
 	</div><!-- FIN DEL DIV FONDO MATE -->
 </body>
 
-<footer style="background-color: grey;width: 60%;margin: 0 auto;">Derechos Reservados. 2020.</footer>
+<footer style="background-color: grey;width: 60%;margin: 0 auto;text-align: center;">Derechos Reservados. 2020.</footer>
 
 </html>

@@ -1,0 +1,111 @@
+/* Comentarios en CSS */
+	/*
+	<!-- No es valido este formato de comentario -->
+	*/
+
+	table,
+	th,
+	td {
+		/* voy a darle estilos a la table, th y td*/
+		border: 1px solid black;
+		/*borde solido de color negro de grosor 1px */
+	}
+
+	/*lo que escriba aca no afecta a table */
+
+	/*para darle estilo a las clases se 'llaman' con .nombre-de-clase*/
+	.finde {
+		background-color: gray;
+		/*color de fondo gris*/
+		color: #c4f5ff;
+		/*color de tipografia rojo*/
+	}
+
+	.navegacion {
+		/*Pegar los bordes para que no queden espacios */
+		border-collapse: collapse;
+		margin: 0 auto;
+	}
+
+	.navegacion th {
+		/*Le cambio el color al th dentro de la tabla con clase navegacion */
+		background-color: #ed8a51;
+	}
+
+	.navegacion td {
+		background-color: #cce1ff;
+	}
+
+	body {
+		background-image: url("fondo2.jpg");
+		/*Imagen de fondo, NOTA: Fondo tentativo*/
+		background-repeat: no-repeat;
+		/*Si se usa 'repeat' se repite en caso de que sea muy chica*/
+		/* height: 500px; altura de body*/
+		background-position: center;
+		/*posicion del fondo: centrado */
+		background-size: cover;
+		/*si es cover, el tamanio de la imagen se ajusta para cubrir toda la ventana visible */
+		position: relative;
+	}
+
+	.cajita {
+		background: rgba(255, 255, 255, 0.3);
+		/*COLOR DE FONDO CON ALPHA (TRANSPARENCIA)*/
+	}
+
+	.cajita h2 {
+		/*aca van los estilos del titulo principal*/
+		font-size: 45px;
+		/*Tamanio de fuente*/
+		text-decoration: underline overline;
+		/*subrayado y sobrerayado*/
+		text-align: left;
+		/*Alinear el texto a la izquierda*/
+		opacity: 1;
+		padding-top: 20px;
+		margin-bottom: 0px;
+		margin-left: 10px;
+
+	}
+
+	.cajita h1 {
+		font-size: 90px;
+		text-align: left;
+		/*Alinear el texto a la izquierda*/
+		margin-top: 0px;
+		margin-left: 20px;
+		margin-bottom: 0px;
+	}
+
+	.fondo-mate {
+		margin: 0 auto;
+		/*Centrado del div fondo-mate*/
+		width: 60%;
+		height: 140%;
+		background-image: url("fondo.jpg");
+		background-size: cover;
+		/*Se adapta al div con 60% de ancho y 100% de alto */
+		background-repeat: no-repeat;
+	}
+
+	.articulo {
+		margin-top: 20px;
+		background: rgba(255, 255, 255, 0.7);
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.articulo h2 {
+		/*aca van los estilos del titulo principal*/
+		font-size: 45px;
+		/*Tamanio de fuente*/
+		text-decoration: underline;
+		text-align: left;
+		/*Alinear el texto a la izquierda*/
+		opacity: 1;
+		padding-top: 20px;
+		margin-bottom: 0px;
+		margin-left: 10px;
+
+	}
