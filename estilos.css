@@ -51,6 +51,7 @@
 
 	.cajita {
 		background: rgba(255, 255, 255, 0.3);
+		width: 100%; margin: 0 auto;
 		/*COLOR DE FONDO CON ALPHA (TRANSPARENCIA)*/
 	}
 
@@ -78,6 +79,14 @@
 		margin-bottom: 0px;
 	}
 
+	.cajita p {
+		border-top: 10px dashed #800f05;
+		width: 100%; font-size:30px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		text-align: center;
+	}
+
 	.fondo-mate {
 		margin: 0 auto;
 		/*Centrado del div fondo-mate*/
@@ -94,6 +103,7 @@
 		background: rgba(255, 255, 255, 0.7);
 		width: 90%;
 		margin: 0 auto;
+		margin-bottom: auto;
 	}
 
 	.articulo h2 {
@@ -108,4 +118,10 @@
 		margin-bottom: 0px;
 		margin-left: 10px;
 
+	}
+
+	.pie{
+		background-color: grey;
+		width: 60%;margin: 0 auto;
+		text-align: center;
 	}
