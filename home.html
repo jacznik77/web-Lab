@@ -1,58 +1,50 @@
 <html>
-
 <head>
 	<title>Inicio - Kiosko A Diario</title>
-	<link rel="stylesheet" href="estilos.css"> <!-- Enlace a estilos-->
+	<link rel="stylesheet" href="estilos.css">
+	<script src="./script.js"></script>
 </head>
-
-<body >
+<body>
 	<div class="fondo-mate">
-		<!-- INICIO DEL DIV FONDO MATE -->
-		<!-- Nombre -->
-
-		<!-- inicio cajita -->
 		<div class="cajita">
 			<h2>Kiosko</h2>
 			<h1>A-Diario</h1>
-			<p>
-				Un sitio donde se pueden leer diarios</p><!-- revisar -->
+			<p>Un sitio donde se pueden leer diarios</p>
 		</div>
-		<!--Fin cajita -->
-
-		<table class="navegacion">
-			<thead>
-				<!-- 1 Celda en la cabeza -->
-				<!-- Colspan es para que se alargue una celda
-					una determinada cantidad de celdas -->
-				<tr>
-					<!-- Alargate 8 celdas -->
-					<th colspan="8">NAVEGACION</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<!--Tengo 8 celdas en el cuerpo-->
-					<td><a href="home.html">INICIO</a></td>
-					<td><a href="domingo.html"> Domingo 18/10 </a></td>
-					<td><a href="lunes.html"> Lunes 19/10 </a></td>
-					<td> Martes 20/10 </td>
-					<td> Miercoles 21/10 </td>
-					<td> Jueves 22/10 </td>
-					<td> Viernes 23/10 </td>
-					<td> Sabado 24/10 </td>
-				</tr>
-			</tbody>
-		</table>
-
-
-		<article class="articulo">
+		<div class="navegacion">
+			<p class="title">Navegacion</p>
+			<div class="menu">
+				<div class="menu-item">
+					<a href="home.html">INICIO</a>
+				</div>
+				<div class="menu-item dia">
+					<a href="domingo.html">Domingo 18/10</a>
+				</div>
+				<div class="menu-item">
+					<a href="lunes.html">Lunes 19/10</a>
+				</div>
+				<div class="menu-item">
+					<a href="martes.html">Martes 20/10</a>
+				</div>
+				<div class="menu-item">
+					<a href="miercoles.html">Miercoles 21/10</a>
+				</div>
+				<div class="menu-item">
+					<a href="home.html">Jueves 22/10</a>
+				</div>
+				<div class="menu-item">
+					<a href="home.html">Viernes 23/10</a>
+				</div>
+				<div class="menu-item">
+					<a href="home.html">Sabado 24/10</a>
+				</div>
+			</div>
+		</div>
+		<div class="articulo">
 			<h2>Inicio</h2>
 			<p>Informacion del sitio, bla bla bla</p>
-		</article>
-
-	</div><!-- FIN DEL DIV FONDO MATE -->
+		</div>
+		<footer class="pie">Derechos Reservados. 2020.</footer>
+	</div><!-- /FONDO MATE -->
 </body>
-
-<footer class="pie">Derechos Reservados. 2020.</footer>
-
 </html>
