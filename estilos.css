@@ -8,6 +8,17 @@
 		background-position: center;
 		background-size: cover;
 	}
+	#up-button{
+		position: fixed;
+		bottom: 20px;
+		right: 30px;
+		background-color: orange;
+		font-weight: bold;
+		font-size: 1.5em;
+		border-radius: 50%;
+		padding: 5px;
+		cursor: pointer;
+	}
 	.noticias{
 		display: flex;
 		flex-direction: column;
