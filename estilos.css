@@ -8,6 +8,23 @@
 		background-position: center;
 		background-size: cover;
 	}
+
+	body::-webkit-scrollbar{
+		width: 0.5rem;
+	}
+
+	body::-webkit-scrollbar-track{
+		background: #cfc9c2;
+	}
+
+	body::-webkit-scrollbar-thumb{
+		background: #a60a12;
+		border-radius: 5px;
+		&:active{
+			background:#a60a12;
+		};
+	}
+
 	#up-button{
 		position: fixed;
 		bottom: 20px;
@@ -162,6 +179,12 @@
 	.menu-item a{
 		color: rgb(29, 29, 29);	
 		text-decoration: none;
+	}
+
+	.menu-item.seleccionado{
+		padding: 10px;
+		background-color:rgb(245, 204, 42);
+		font-weight: bold;
 	}
 	footer{
 		width: 100%;
